@@ -160,7 +160,7 @@ body {
 }
 @media (max-width: 600px) {
   .landing {
-    width: 221%;
+    width: 100%;
     background-image: url("../images/mountain.jpg");
     background-size: cover;
     height: calc(100vh - 74px);
@@ -518,7 +518,7 @@ footer .footer-contnet p span {
 }
 @media (max-width: 600px) {
     .footer {
-      width: 221%;
+      width: 100%;
     }
   }
 /** end Footer*/
