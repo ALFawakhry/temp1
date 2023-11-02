@@ -7,11 +7,11 @@
 /*! End Variables */
 
 /*? start global Rules */
-/* * {
+* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}*/
+}
 
 body {
   font-family: "Work Sans", sans-serif;
@@ -151,54 +151,61 @@ body {
 
 /*? end Header */
 /* Start Landing */
+.container {
+  max-width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 .landing {
   width: 100%;
   background-image: url("../images/mountain.jpg");
   background-size: cover;
-  height: calc(100vh - 74px);
+  height: 100vh;
   position: relative;
-}
-@media (max-width: 600px) {
-  .landing {
-    width: 100%;
-    background-image: url("../images/mountain.jpg");
-    background-size: cover;
-    height: calc(100vh - 74px);
-    position: relative;
-  }
-  .landing .intro-text {
-    position: absolute;
-    left: 50%;
-    top: 30%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 420px;
-    max-width: 100%;
-  }
 }
 
 .landing .intro-text {
   position: absolute;
   left: 50%;
-  top: 30%;
+  top: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 420px;
-  max-width: 100%;
+  width: 80%;
+  max-width: 420px;
+  margin: 0 auto;
 }
 
 .landing .intro-text h1 {
   margin-bottom: 0;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 30px;
   color: var(--main-color);
 }
 
 .landing .intro-text p {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
 }
 
+@media only screen and (max-width: 768px) {
+  .landing
+{
+  width: 126%;
+}
+  .landing .intro-text {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  .landing .intro-text h1 {
+    font-size: 24px;
+  }
+
+  .landing .intro-text p {
+    font-size: 14px;
+  }
+}
 /* end Landing */
 /*? start feature */
 /* using grid */
@@ -516,9 +523,9 @@ footer .footer-contnet p span {
     size: 15px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .footer {
-      width: 100%;
+      width: 126%;
     }
   }
 /** end Footer*/
